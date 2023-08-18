@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "twitter_erasurer",
+  "version": "0.0.1",
+  "description": "twitter なんて存在しなかった。いいね？",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
